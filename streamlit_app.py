@@ -49,14 +49,6 @@ Original file is located at
 #
 
 
-import os
-
-# Prompt user to enter the API key securely
-api_key = input("Enter your Gemini API key: ")
-
-# Save it as an environment variable (temporary for this session)
-os.environ["GEMINI_API_KEY"] = api_key
-
 # Save it as Streamlit secrets
 with open("secrets.toml", "w") as f:
     f.write(f'GEMINI_API_KEY = "{api_key}"')
