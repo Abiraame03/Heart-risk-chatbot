@@ -60,8 +60,3 @@ os.environ["GEMINI_API_KEY"] = api_key
 # Save it as Streamlit secrets
 with open("secrets.toml", "w") as f:
     f.write(f'GEMINI_API_KEY = "{api_key}"')
-
-!npm install -g localtunnel
-
-!streamlit run heart_chatbot_app.py --server.enableCORS false --server.enableXsrfProtection false --server.port 8501 &
-!lt --port 8501
