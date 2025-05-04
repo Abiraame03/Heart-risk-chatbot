@@ -48,7 +48,7 @@ Original file is located at
 #         st.markdown(f"**Bot:** {turn.parts[1].text}")
 #
 
-from google.colab import output
+
 import os
 
 # Prompt user to enter the API key securely
