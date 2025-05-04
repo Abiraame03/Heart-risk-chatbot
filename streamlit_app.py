@@ -49,6 +49,3 @@ Original file is located at
 #
 
 
-# Save it as Streamlit secrets
-with open("secrets.toml", "w") as f:
-    f.write(f'GEMINI_API_KEY = "{api_key}"')
